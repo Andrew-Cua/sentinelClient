@@ -24,7 +24,7 @@ export default {
     sentinels: []
   }),
   mounted() {
-    fetch("http://localhost:3000/sentinels")
+    fetch("https://sentinelserver.herokuapp.com/sentinels")
       .then(response => response.json())
       .then(result => {
         this.sentinels = result;

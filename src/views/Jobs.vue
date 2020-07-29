@@ -16,7 +16,7 @@ export default {
   }),
   mounted() {
     fetch(
-      `http://localhost:3000/jobs/findBySentinelID/${this.$route.params.sentinelID}`
+      `https://sentinelserver.herokuapp.com/jobs/findBySentinelID/${this.$route.params.sentinelID}`
     )
       .then(response => response.json())
       .then(result => {

@@ -71,7 +71,7 @@ export default {
         });
       });*/
     this.getData(
-      `http://localhost:3000/sentinels/data/findByOperationID/${this.$route.params.operationID}`
+      `https://sentinelserver.herokuapp.com/sentinels/data/findByOperationID/${this.$route.params.operationID}`
     );
   },
   methods: {
